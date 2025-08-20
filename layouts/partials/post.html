@@ -20,7 +20,9 @@
     {{ end }}
 
     {{ if not .Params.nocomments }}
+    <div class="disqus">
       {{ partial "disqus.html" . }}
+    </div>
     {{ end }}
 
   </div>
