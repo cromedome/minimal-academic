@@ -1,7 +1,7 @@
 <div class="navbar-hero">
 	<nav>
 		{{ range $k, $v := $.Site.Params.menu }}
-			{{ if $k }}&nbsp&nbsp•&nbsp&nbsp{{ end }}
+			{{ if $k }}<span class="nav-sep">•</span>{{ end }}
 			<a href="{{ $v.link | relURL }}">{{ $v.text }}</a>
 		{{ end }}
 	</nav>
